@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:700");
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:700");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-size: 14px;
+  color: #111;
+  font-family: 'Open Sans', sans-serif;
+}
+.page-unit {
+  max-width: 1300px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 20px;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:700");
+.header {
+  background-color: #34c8b2;
+  color: #fff;
+  text-align: right;
+  overflow: hidden;
+  background: url("../img/bg/header_5.jpg") center no-repeat;
+  background-size: cover;
+}
+.header .page-unit {
+  padding-left: 120px;
+}
+.header li {
+  display: inline-block;
+}
+.header .header-info {
+  background-color: #0b1820;
+  z-index: 2;
+  padding: 15px 0;
+}
+.header .header-info a {
+  color: #34c8b2;
+}
+.header .header-menu {
+  background-color: #34c8b2;
+  padding: 15px 0;
+  text-transform: uppercase;
+}
+.header .header-menu a {
+  color: #fff;
+}
+.header .header-menu li {
+  padding: 0 10px;
+}
+.header .site-logo {
+  position: absolute;
+  top: -15px;
+  left: 20px;
+  background-color: #0b1820;
+  padding: 10px 20px;
+}
+.header .slogan {
+  font-size: 30px;
+}
+
+.main-catalog {
+  text-align: center;
+  height: 400px;
+  background-size: cover;
+}
+.main-catalog a {
+  display: inline-block;
+  width: 150px;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+  background-color: rgba(1,1,1,0.5);
+  margin: 20px;
+}
