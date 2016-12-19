@@ -1,6 +1,7 @@
 @import "colors.styl"
 
 *
+	border 0
 	padding 0
 	margin 0
 	box-sizing border-box
@@ -10,14 +11,59 @@ ul, li
 
 a
 	text-decoration none
+	color $color_6
+	&:hover
+		color $color_4
+
+input, textarea
+	color $color_4
+	font-family 'PT Sans Caption', sans-serif
+	border 0
+	font-size 14px
+	border-radius 3px
 
 body
 	font-size 14px
-	color #111
-	font-family: 'Open Sans', sans-serif;
-	
+	color $color_7
+	font-family 'PT Sans Caption', sans-serif
+
 .page-unit
+	width  100%
 	max-width 1300px
 	margin 0 auto
 	position relative
 	padding 0 20px
+
+.clearfix:after
+	content ''
+	clear both
+	content "."
+	display block
+	height 0
+	visibility hidden
+	font-size 0
+	line-height 0
+
+.fl
+	float left
+
+.fr
+	float right
+
+.middle
+	vertical-align middle
+
+.flex
+	display flex
+
+.flex-item
+	flex 1, 1, auto
+
+
+.submit-btn
+	padding 5px 15px
+	min-height 30px
+	background-color $color_6
+	color $color_3
+	border-radius 3px
+	cursor pointer

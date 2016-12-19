@@ -1,45 +1,89 @@
 @import "colors.styl"
 
 .header
-	background-color $color_1
 	color $color_3
 	text-align right
-	overflow hidden
-	background url(../img/bg/header_5.jpg) center no-repeat
+	background url(../img/bg/header_2.jpg) center no-repeat
 	background-size cover
 
-	.page-unit
-		padding-left 120px
+	.inner
+		background $opacity_7 url("../img/bg/dot_2.png") left top
 
 	li
 		display inline-block
-
-	.header-info
-		background-color $color_2
-		z-index 2
-		padding 15px 0
-
-		a
-			color $color_1
-
-	.header-menu
-		background-color $color_1
-		padding 15px 0
-		text-transform uppercase
-
-		a
-			color $color_3
-
-		li
-			padding 0 10px
 
 	.site-logo
 		position absolute
 		top -15px
 		left 20px
-		background-color $color_2
+		background-color $color_3
 		padding 10px 20px
+		border-color $color_1
+		border-style solid
+		border-width 0 1px 1px
 
-	.slogan
-		font-size 30px
+
+.header-info
+	z-index 2
+	padding 10px 0
+	color $color_5
+	background-color $color_1
+
+	a
+		&:hover
+			color $color_3
+
+.header-search-form
+	padding 8px 0
+	
+	.header-search-field
+		padding 5px 15px
+		min-height 30px
+		border-radius 2px
+		vertical-align middle
+
+	.submit-btn
+		border-radius 0 3px 3px 0
+		position relative
+		margin-left -3px
+		vertical-align middle
+
+.header-menu
+	font-size 0
+	text-transform uppercase
+
+	nav
+		text-align left
+		float left
+
+	.link
+		letter-spacing 1px
+		font-size 15px
+		color $color_3
+		padding 15px
+		display inline-block
+		position relative
+
+		&:after
+			content ''
+			position absolute
+			width 0
+			height	4px
+			background-color $color_6
+			transition width .5s ease, left .5s ease
+			left 50%
+			bottom 0
+
+		&:hover:after, &.active:after
+			width 100%
+			left 0
+
+
+
+	
+
+	
+
+
+
 
