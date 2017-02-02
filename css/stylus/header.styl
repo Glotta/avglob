@@ -1,37 +1,69 @@
-@import "colors.styl"
+@import "colors"
+@import "icomoon/style"
+
+.sticky.header
+	position fixed
+	width 100%
+	left 0
+
+.toggle-active
+	display block!important
 
 .header
 	color $color_3
-	text-align right
-	background url(../img/bg/header_2.jpg) center no-repeat
-	background-size cover
+	position relative
+	z-index 3
 
-	.inner
-		background $opacity_7 url("../img/bg/dot_2.png") left top
-
-	li
-		display inline-block
+	.page-unit
+		transition padding-left .5s ease
 
 	.site-logo
+		position relative
+		z-index 3
+		display block
+
+		img
+			display none
+			width 100%
+
+	.logo-wrapper
 		position absolute
-		top -15px
-		left 20px
-		background-color $color_3
-		padding 10px 20px
-		border-color $color_1
-		border-style solid
-		border-width 0 1px 1px
+		top 0
+		left 0
+		background-color $color_5
 
+		&:before
+			z-index 2
+			content ''
+			position absolute
+			bottom 0
+			width 10000px
+			height 100%
+			background-color $color_5
+			transform skewX(150deg)
 
-.header-info
-	z-index 2
-	padding 10px 0
-	color $color_5
-	background-color $color_1
+		&:after
+			z-index 1
+			content ''
+			position absolute
+			bottom 0
+			width 10000px
+			height 100%
+			background-color $color_1
+			transform skewX(150deg)
 
-	a
-		&:hover
-			color $color_3
+	.lng-switcher
+		text-transform uppercase
+
+		.lng-list
+			display none
+
+.header-menu
+	z-index 1
+	text-transform uppercase
+	background-color $color_4
+	font-size 14px
+	height 48px
 
 .header-search-form
 	padding 8px 0
@@ -42,42 +74,635 @@
 		border-radius 2px
 		vertical-align middle
 
-	.submit-btn
-		border-radius 0 3px 3px 0
-		position relative
-		margin-left -3px
-		vertical-align middle
+.media-search
+	float right
+	position relative
 
-.header-menu
-	font-size 0
-	text-transform uppercase
+	&:hover
+		color $color_5
 
-	nav
-		text-align left
-		float left
+.lng-switcher
+	.flag-icon
+		margin-right 5px
 
-	.link
-		letter-spacing 1px
-		font-size 15px
-		color $color_3
-		padding 15px
+.flag-icon
+	vertical-align middle
+	display inline-block
+	width 34px
+	height 22px
+	border 1px solid $color_9
+	background-image url(../img/flags/flags.png)
+	background-repeat no-repeat
+	position relative
+	transition all .5s ease
+
+	&:after
+		content ''
+		position absolute
+		top 0
+		left 0
+		width 100%
+		height 100%
+		background linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 5%,rgba(255,255,255,.5) 20%,rgba(255,255,255,0) 50%,rgba(255,255,255,.5) 75%,rgba(255,255,255,0) 100%);
+
+.flag-ru
+	background-position 0 0
+
+.flag-ua
+	background-position 0 -20px
+
+.flag-en
+	background-position 0 -40px
+
+.flag-pl
+	background-position 0 -60px
+
+.flag-de
+	background-position 0 -80px
+
+.header-search-form
+	display none
+
+.mobile-menu-item, .mobile-menu-item:hover
+	color $color_5
+
+/* --- SCREEN <= 480px --- */ 
+@media screen and (max-width: 480px)
+	.header
+		.site-logo
+			width 70px
+			padding 12px 14px
+
+			.logo-img-480
+				display inline-block
+
+		.page-unit
+			padding-left 90px
+
+		.header-search-form
+			padding 40px 10px 80px
+
+			.header-search-field
+				width calc(100% - 90px)
+
+/* --- SCREEN > 480px --- */
+@media screen and (min-width: 481px)
+	.header
+		.site-logo
+			width 130px
+			transition width .5s ease
+
+
+/* --- SCREEN > 480px && <= 980px --- */
+@media screen and (min-width: 481px) and (max-width: 980px)
+	.header
+		.site-logo
+			padding 15px 10px
+
+			.logo-img-980
+				display inline-block
+
+		.page-unit
+			padding-left 150px
+
+	.header-search-form
+		.header-search-field
+			width calc(100% - 110px)
+
+
+/* --- SCREEN <= 980px --- */
+@media screen and (max-width: 980px)
+	.header
+		position fixed
+		top 0
+		width 100%
+
+		.logo-wrapper
+			height 48px
+
+			&:before
+				right -5px
+
+			&:after
+				right -20px
+
+		.page-unit
+			padding-right 0
+			
+		.mobile-toggle
+			font-size 17px
+			position fixed
+			width 100%
+			z-index	1
+			max-height calc(100% - 48px)
+			padding 40px 20px 100px
+			position fixed
+			top 48px
+			left 0
+			box-shadow 0 20px 20px $opacity_5
+			background $color_1 url(../img/bg/factory-opacity.png) left bottom repeat-x
+			overflow-y auto
+
+		.media-contacts
+			position absolute
+			top 0
+			right 48px
+
+		.media-lng
+			position absolute
+			top 0
+			right 96px
+
+		.media-menu
+			float left
+			margin-left 10px
+			font-size 18px
+			position relative
+
+		.contacts
+			min-height 76px
+			display none
+			text-align center
+
+			.font-icon
+				margin-right 10px
+				vertical-align middle
+				font-size 20px
+				color $color_8
+
+			a, .phones
+				vertical-align middle
+
+			ul
+				display inline-block
+				text-align left
+
+			li
+				padding-top 15px
+
+				&:first-child
+					padding-top 0
+
+			.number
+				font-size 22px
+				font-weight 700
+
+		.lng-switcher
+			text-align center
+
+			ul
+				display inline-block
+				text-align left
+
+			.hide-mobile
+				display none
+			.hide-desktop
+				display inline-block
+
+			li
+				padding-top 15px
+
+				&:first-child
+					padding-top 0
+
+		.mobile-menu-item
+			width 48px
+			height 48px
+			text-align center
+			display block
+			line-height 48px
+			font-size 18px
+
+			&.target-active
+				color $color_1
+				
+				&:after
+					content ''
+					position absolute
+					bottom 0
+					left 50%
+					margin-left -10px
+					border-style solid
+					border-width 5px 10px
+					border-color transparent transparent $color_1 transparent
+
+	.header-menu
+		.main-menu
+			font-size 15px
+			display none
+			padding 0
+
+			a
+				display block
+				position relative
+
+				&.toggle-link
+					background-color $color_6
+					color $color_3
+
+			ul
+				max-height 0
+				overflow hidden
+				transition max-height .5s ease
+
+			& > li
+				& > a
+					font-weight 700
+					color $color_3
+					padding 20px
+					background-color $color_6
+					border-bottom 1px solid $color_11
+
+			.parent
+				& > a
+					padding-right 40px
+
+				&.active
+					& > ul, .desktop-menu > ul
+						max-height 1000px
+
+					& > a
+						background-color $color_5
+						color $color_1
+
+						.toggle-arr:after
+							color $color_1
+							content icon-circle-up
+
+			.toggle-arr
+				position absolute
+				right 0
+				top 0
+				font-size 24px
+				color $color_2
+				font-weight normal
+				font-family: 'icomoon'
+				height 100%
+				width 50px
+
+				&:after
+					position absolute
+					right 12px
+					top 50%
+					margin-top -12px
+					content icon-circle-down
+
+		.desktop-menu
+			.l-2 .parent > a
+				font-size 13px
+				padding-top 15px
+				padding-bottom 15px
+				padding-left 30px
+				border-bottom 1px solid $color_11
+
+				.toggle-arr
+					opacity .6
+					font-size 22px
+
+			.l-3 .parent > a
+				font-size 13px
+				padding-top 15px
+				padding-bottom 15px
+				padding-left 40px
+				border-bottom 1px solid $color_11
+
+			.l-3 .parent.active ul
+				padding-top 10px
+				padding-bottom 10px
+				border-bottom 1px solid $color_11
+
+			.l-4
+				text-transform none
+				font-size 15px
+
+				a
+					padding-top 5px
+					padding-bottom 5px
+					padding-left 50px
+
+
+/* --- SCREEN > 980px --- */
+@media screen and (min-width: 981px)
+	.header
+		&.sticky
+			top -76px
+
+			.site-logo
+				.logo-img
+					display none
+
+				.logo-img-980
+					display block
+					margin-top 80px
+
+		.page-unit
+			padding-left 220px
+			position relative
+
+		.logo-wrapper
+			left 20px
+			height 124px
+			top -76px
+
+			&:before
+				right -30px
+
+			&:after
+				right -47px
+
+		.site-logo
+			padding 10px
+
+			.logo-img
+				display inline-block
+
+		.mobile-menu-item
+			display none
+
+		.media-search
+			display block
+			color $color_1
+			font-size 20px
+			height 48px
+			line-height 48px
+
+		.header-info
+			position relative
+			z-index 2
+			color $color_3
+			background-color $color_1
+
+			.page-unit
+				display flex
+				height 76px
+				align-items center
+
+			.contacts
+				flex 1 1 auto
+				text-align center
+
+				li
+					display inline-block
+					vertical-align middle
+					margin-right 20px
+
+			.number
+				font-size 16px
+				font-weight 700
+
+			.font-icon
+				font-size 18px
+				vertical-align middle
+				color $color_8
+				margin-right 5px
+
+			.icon-phone
+				vertical-align 8px
+
+			.phones
+				padding 8px 10px
+				border 3px double $color_5
+
+		.lng-switcher
+			.hide-mobile
+				display inline-block
+			.hide-desktop
+				display none
+	
+	.header-menu
+		nav
+			text-align left
+			float left
+
+		.toggle-arr
+			display none
+
+		.main-menu > li
+			display inline-block
+			margin-right 10px
+
+			.link
+				color $color_1
+				padding 15px
+				display inline-block
+				position relative
+				height 48px
+
+				&:after
+					content ''
+					position absolute
+					width 0
+					height	4px
+					background-color $color_5
+					transition width .5s ease, left .5s ease
+					left 50%
+					bottom 0
+
+			.link:hover:after, &.active .link:after
+				width 100%
+				left 0
+
+			&:hover, &.active
+				.desktop-menu
+					display block
+
+	.desktop-menu
+		position absolute
+		left 0
+		top 100%
+		width 100%
+		display none
+		
+		a
+			color $color_4
+
+		.submenu-link
+			display block
+			padding 20px
+			background-color $color_6
+			border-bottom 1px solid $color_11
+			position relative
+			z-index 2
+			font-weight 700
+
+		.l-2
+			width 300px
+			display inline-block
+
+			.active
+				.submenu-link
+					background-color $color_5
+					color $color_1
+
+				.l-3
+					display block
+
+		.l-3
+			display none
+			z-index 1
+			position absolute
+			top 0
+			left 0
+			width 100%
+			min-height 100%
+			padding 0 20px 50px 300px
+			box-shadow 0 20px 20px $opacity_5
+			background $color_1 url(../img/bg/factory-opacity.png) left bottom repeat-x
+
+			& > li
+				display inline-block
+				width 30%
+				padding 20px 10px 10px
+				vertical-align top
+				margin-left 2.9%
+
+				& > a
+					display block
+					padding-bottom 5px
+					border-bottom 2px solid $color_5
+					font-weight 700
+
+			a:hover
+				color $color_5
+
+		.l-4
+			text-transform none
+			padding-top 2px
+
+			li
+				padding-top 5px
+
+
+	.lng-switcher
 		display inline-block
 		position relative
+		white-space nowrap
+		text-transform uppercase
+		text-align left
 
-		&:after
-			content ''
+		.current
+			position relative
+			padding-right 15px
+			display inline-block
+
+			&:after
+				right 0
+				top 10px
+				position absolute
+				content ''
+				border-style solid
+				border-width 7px
+				border-color $color_8 transparent transparent
+				height 0
+				line-height 0
+
+			&.target-active
+				&:after
+					border-color transparent transparent $color_8
+					top 2px
+
+			ul
+				display block
+
+		a:hover
+			.flag-icon
+				box-shadow 0 0 5px rgba(0,0,0,.5)
+
+		ul
+			padding 0 15px 15px
+			border-radius 0 0 5px 5px
 			position absolute
-			width 0
-			height	4px
-			background-color $color_6
-			transition width .5s ease, left .5s ease
-			left 50%
-			bottom 0
+			left -15px
+			top 100%
+			background-color $color_1
+			box-shadow 0 10px 10px rgba(0,0,0,.5)
+			font-weight 700
 
-		&:hover:after, &.active:after
+		li
+			padding-top 10px
+
+		.selected
+			display none
+
+
+/* --- SCREEN <= 1200px --- */
+@media screen and (min-width: 981px) and (max-width: 1200px)
+	.header-search-form
+		.header-search-field
 			width 100%
-			left 0
 
+	.header
+		.media-search
+			width 48px
+			text-align right
+
+			&.target-active
+				&:after
+					content ''
+					position absolute
+					bottom 0
+					left 50%
+					margin-left 5px
+					border-style solid
+					border-width 5px 10px
+					border-color transparent transparent $color_1 transparent
+
+/* --- SCREEN <= 1200px --- */
+@media screen and (max-width: 1200px)
+	.header-search-form
+		display none
+		text-align center
+		z-index 1
+		position absolute
+		top 100%
+		left 0
+		width 100%
+		padding 60px 20px 100px
+		box-shadow 0 20px 20px $opacity_5
+		background $color_1 url(../img/bg/factory-opacity.png) left bottom repeat-x
+
+		.header-search-field
+			display inline-block
+			padding 10px 10px 12px
+			background-color $color_1
+			border 1px solid $color_5
+			border-radius 5px
+			width calc(100% - 110px)
+			max-width 400px
+
+		.submit-btn
+			display none
+
+/* --- SCREEN > 1200px  --- */
+@media screen and (min-width: 1201px)
+	.header
+		.media-search
+			display none
+
+	.header-search-form
+		float right
+		display block
+		padding 7px 0 5px 20px
+
+		.header-search-field
+			height 34px
+
+		button
+			vertical-align middle
+			font-size 19px
+			margin-left -6px
+			height 34px
+			position relative
+
+		.submit-btn
+			line-height 26px
+			height 34px
+			display block
+			padding-left 10px
+			padding-right 10px
+
+		.btn-main
+			display none
 
 
 	

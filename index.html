@@ -1,154 +1,971 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
+	<head data-language="ru" data-locale="ru_RU">
+		<title>Нержавейка, алюминий, нихром, фехраль, титан, трубопроводная арматура</title>
+		<!-- fill it -->
+		<meta property="og:url"	content="https://www.avglob.org" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Your Website Title" />
+		<meta property="og:description" content="Your description" />
+		<meta property="og:image" content="img/avglob.svg" />
+
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link type="text/css" href="css/jquery.slick.css" rel="stylesheet">
+		<link type="text/css" href="bower_components/select2/dist/css/select2.min.css" rel="stylesheet">
 		<link type="text/css" href="css/icomoon.css" rel="stylesheet">
+		<link type="text/css" href="icomoon/icomoon.css" rel="stylesheet">
 		<link type="text/css" href="css/style.css" rel="stylesheet">
-		<script type="text/javascript" src="js/jquery.js"></script>
+
+		<!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+		<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+		<script type="text/javascript" src="bower_components/select2/dist/js/select2.full.min.js"></script>
+		<script type="text/javascript" src="js/jquery.bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/jquery.slick.min.js"></script>
+		<script type="text/javascript" src="js/jquery.toggletabs.js"></script>
 		<script type="text/javascript" src="js/common.js"></script>
+
+		<!-- like buttons
+		<script src="https://vkontakte.ru/js/api/openapi.js" type="text/javascript" charset="windows-1251"></script>
+		<script src="https://apis.google.com/js/platform.js" async defer></script>
+		<script type="text/javascript" src="js/socials.js"></script> -->
 	</head>
 	<body>
 		<header class="header">
-			<div class="inner">
-				<section class="header-info">
-					<div class="page-unit clearfix">
-						<!--<a class="site-logo" href="">
-							<img src="img/logo_7.png">
-						</a>-->
-						+7 (495) 777-25-41, +7 (926) 168-06-19 <a href="mailto:avglob@avglob.org">avglob@avglob.org</a>
+			<div class="header-info">
+				<div class="page-unit">
+					<a href="#header-contacts" class="icon-phone media-contacts mobile-menu-item js-media-menu-item"></a>
+					<div id="header-contacts" class="contacts mobile-toggle">
+						<ul >
+							<li>
+								<span class="icon-location font-icon"></span> <a class="internal-link" href="">Днепропетровск</a>
+							</li>
+							<li>
+								<span class="icon-phone font-icon"></span>
+								<div class="iblock phones">
+									<div>+7 (495) <span class="number">777-25-41</span></div>
+									<div>+7 (926) <span class="number">168-06-19</span></div>
+								</div>
+							</li>
+							<li>
+								<span class="icon-letter font-icon"></span>
+								<a href="mailto:avglob@avglob.org">avglob@avglob.org</a>
+							</li>
+						</ul>
 					</div>
-				</section>
-				<section class="header-menu">
-					<div class="page-unit clearfix">
-						<nav class="fl">
-							<ul>
-								<li><a class="link active" href="javascript:;">каталог</a></li>
-								<li><a class="link" href="/price">прайс</a></li>
-								<li><a class="link" href="/about">компания</a></li>
-								<li><a class="link" href="/grade-list">марочник</a></li>
-								<li><a class="link" href="/contacts">контакты</a></li>
-							</ul>
-						</nav>
-						<form class="fr header-search-form" action="">
-							<input class="header-search-field" type="" name="" placeholder="Поиск по сайту">
-							<button class="submit-btn" type="submit" name="">!</button>
-						</form>
-					</div>
-				</section>
-				
-			
-				<section class="general-logo page-unit">
-					<div class="container">
-						<div class="logo">
-							<img src="img/logo.png">
+					<div class="lng-switcher-wrapper">
+						<div class="lng-switcher">
+							<a href="#header-lng" class="current media-lng mobile-menu-item js-media-menu-item">
+								<span class="flag-icon flag-ru hide-mobile"></span>
+								<span class="hide-desktop">en</span>
+							</a>
+							<div id="header-lng" class="lng-list mobile-toggle">
+								<ul>
+									<li>
+										<a href="">
+											<span class="flag-icon flag-en"></span>
+											<span class="hide-mobile">en</span>
+											<span class="hide-desktop">English</span>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="flag-icon flag-pl"></span>
+											<span class="hide-mobile">pl</span>
+											<span class="hide-desktop">Polska</span>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="flag-icon flag-de"></span>
+											<span class="hide-mobile">de</span>
+											<span class="hide-desktop">Deutsch</span>
+										</a>
+									</li>
+								</ul>
+							</div>
 						</div>
-						<div class="slogan">Качественный металл. Надежное партнерство</div>
 					</div>
-				</section>
+				</div>
+			</div>
+			<div class="header-menu">
+				<div class="page-unit clearfix">
+					<div class="logo-wrapper">
+						<a class="site-logo" href="">
+							<img class="logo-img" alt="auremo.org" src="img/avglob.svg" onerror="this.src = 'img/logo_7.png'">
+							<img class="logo-img-980" alt="auremo.org" src="img/mobile-logo.svg">
+							<img class="logo-img-480" alt="auremo.org" src="img/mobile-logo-2.svg">
+						</a>
+					</div>
+					<nav class="fl">
+						<a href="#header-menu" class="icon-menu_24 media-menu mobile-menu-item js-media-menu-item"></a>
+						<ul id="header-menu" class="main-menu l-1 mobile-toggle">
+							<li id="js-catalog" class="parent">
+								<a class="link toggle-link">каталог <span class="toggle-arr"></span></a>
+								<div class="desktop-menu">
+									<ul class="submenu l-2">
+										<li class="parent" id="category-1">
+											<a class="submenu-link toggle-link">Никелевые сплавы <span class="toggle-arr"></span></a>
+											<ul class="submenu l-3">
+												<li class="parent">
+													<a href="">Нихром и фехраль <span class="toggle-arr"></span></a>
+													<ul class="submenu l-4">
+														<li><a href="">Нихром</a></li>
+														<li><a href="">Нихромовая проволока</a></li>
+														<li><a href="">Фехраль</a></li>
+														<li><a href="">Фехралевая проволока</a></li>
+														<li><a href="">Цена на никелевые сплавы</a></li>
+													</ul>
+												</li>
+												<li class="parent">
+													<a href="">Спецстали <span class="toggle-arr"></span></a>
+													<ul class="submenu l-4">
+														<li><a href="">Прецизионные сплавы </a></li>
+														<li><a href="">ХН32Т - ХН78Т труба, лист, круг, проволока, лента, поковка</a></li>
+														<li><a href="">монель, hastelloy, inconel</a></li>
+														<li><a href="">Стали специального назначения</a></li>
+													</ul>
+												</li>
+												<li class="parent">
+													<a href="">Термопарная проволока <span class="toggle-arr"></span></a>
+													<ul class="submenu l-4">
+														<li><a href="">Цены на проволоку для термопары</a></li>
+														<li><a href="">Алюмель</a></li>
+														<li><a href="">Хромель</a></li>
+														<li><a href="">Копель</a></li>
+														<li><a href="">Константан</a></li>
+														<li><a href="">ВР5, ВР20</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li class="parent" id="category-2">
+											<a class="submenu-link toggle-link">Нержавейка, титан <span class="toggle-arr"></span></a>
+											<ul class="submenu l-3">
+												<li class="parent">
+													<a href="">Нержавеющий прокат <span class="toggle-arr"></span></a>
+													<ul class="submenu l-4">
+														<li><a href="">Марки нержавейки</a></li>
+														<li><a href="">Труба нержавеющая</a></li>
+														<li><a href="">Нержавеющая проволока</a></li>
+														<li><a href="">Круг нержавеющий</a></li>
+														<li><a href="">Нержавеющая лента</a></li>
+														<li><a href="">Нержавеющий лист</a></li>
+														<li><a href="">Нержавеющий шестигранник</a></li>
+														<li><a href="">Нержавеющий уголок</a></li>
+														<li><a href="">Нержавеющий квадрат</a></li>
+														<li><a href="">Цена на нержавеющий металлопрокат</a></li>
+													</ul>
+												<li class="parent">
+													<a href="">Титан, Титановый прокат <span class="toggle-arr"></span></a>
+													<ul class="submenu l-4">
+														<li><a href="">Титан согласно ГОСТ</a></li>
+														<li><a href="">Титан Европа</a></li>
+														<li><a href="">Титановая труба</a></li>
+														<li><a href="">Титановая проволока</a></li>
+														<li><a href="">Титановый круг</a></li>
+														<li><a href="">Титановая лента</a></li>
+														<li><a href="">Титановый лист</a></li>
+														<li><a href="">Карбид - титановые электроды</a></li>
+														<li><a href="">Титановый прокат</a></li>
+													</ul>
+												<li class="parent">
+													<a href="">Порошки цветных металлов <span class="toggle-arr"></span></a>
+													<ul class="submenu l-4">
+														<li><a href="">Порошки цветных металлов</a></li>
+														<li><a href="">Алюминиевый порошок</a></li>
+														<li><a href="">Ванадиевый порошок</a></li>
+														<li><a href="">Вольфрамовый порошок</a></li>
+														<li><a href="">Железный порошок</a></li>
+														<li><a href="">Кобальтовый порошок</a></li>
+														<li><a href="">Медный порошок</a></li>
+														<li><a href="">Молибденовый порошок</a></li>
+														<li><a href="">Порошок нержавеющей стали</a></li>
+														<li><a href="">Никелевый порошок</a></li>
+														<li><a href="">Танталовый порошок</a></li>
+														<li><a href="">Цинковый порошок</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li class="parent" id="category-3">
+											<a class="submenu-link toggle-link">Редкие и тугоплавкие металлы <span class="toggle-arr"></span></a>
+											<ul class="submenu l-3">
+												<li class="parent">
+													<a href="">Вольфрам <span class="toggle-arr"></span></a>
+													<ul class="submenu l-4">
+														<li><a href="">Вольфрам</a></li>
+														<li><a href="">Труба вольфрамовая</a></li>
+														<li><a href="">Вольфрамовые электроды</a></li>
+														<li><a href="">Вольфрамовая проволока</a></li>
+														<li><a href="">Вольфрамовый пруток</a></li>
+														<li><a href="">Вольфрамовая фольга</a></li>
+														<li><a href="">Вольфрамовый лист</a></li>
+													</ul>
+												</li>
+												<li class="parent">
+													<a href="">Молибден <span class="toggle-arr"></span></a>
+													<ul class="submenu l-4">
+														<li><a href="">Молибден металл</a></li>
+														<li><a href="">Молибденовая труба</a></li>
+														<li><a href="">Молибденовая проволока</a></li>
+														<li><a href="">Молибденовый пруток</a></li>
+														<li><a href="">Молибденовая фольга</a></li>
+														<li><a href="">Молибденовый лист</a></li>
+														<li><a href="">Молибденовый штабик</a></li>
+														<li><a href="">Молибденовая смазка</a></li>
+													</ul>
+												</li>
+												<li class="parent">
+													<a href="">Металлы в прокате <span class="toggle-arr"></span></a>
+													<ul class="submenu l-4">
+														<li><a href="">Гафний</a></li>
+														<li><a href="">Индий</a></li>
+														<li><a href="">Кобальт</a></li>
+														<li><a href="">Магний</a></li>
+														<li><a href="">Никель</a></li>
+														<li><a href="">Ниобий</a></li>
+														<li><a href="">Рений</a></li>
+														<li><a href="">Тантал</a></li>
+														<li><a href="">Цирконий</a></li>
+													</ul>
+												</li>
+												<li class="parent">
+													<a href="">Редкие металлы <span class="toggle-arr"></span></a>
+													<ul class="submenu l-4">
+														<li><a href="">Бериллий</a></li>
+														<li><a href="">Гадолиний</a></li>
+														<li><a href="">Галлий</a></li>
+														<li><a href="">Германий</a></li>
+														<li><a href="">Иттрий</a></li>
+														<li><a href="">Литий</a></li>
+														<li><a href="">Люминофоры</a></li>
+														<li><a href="">Селен</a></li>
+														<li><a href="">Скандий</a></li>
+														<li><a href="">Электролюминофоры</a></li>
+														<li><a href="">Фотолюминофоры</a></li>
+														<li><a href="">Борная кислота</a></li>
+													</ul>
+												</li>
+												<li class="parent">
+													<a href="">Лантоиды <span class="toggle-arr"></span></a>
+													<ul class="submenu l-4">
+														<li><a href="">Гольмий</a></li>
+														<li><a href="">Диспрозий</a></li>
+														<li><a href="">Европий</a></li>
+														<li><a href="">Иттербий</a></li>
+														<li><a href="">Лантан</a></li>
+														<li><a href="">Лютеций</a></li>
+														<li><a href="">Неодим</a></li>
+														<li><a href="">Празеодим</a></li>
+														<li><a href="">Самарий</a></li>
+														<li><a href="">Тербий</a></li>
+														<li><a href="">Тулий</a></li>
+														<li><a href="">Церий</a></li>
+														<li><a href="">Эрбий</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li class="parent" id="category-4">
+											<a class="submenu-link toggle-link">Цветные металлы <span class="toggle-arr"></span></a>
+											<ul class="submenu l-3">
+												<li class="parent">
+													<a href="">Баббит, припой, олово <span class="toggle-arr"></span></a>
+													<ul class="submenu l-4">
+														<li><a href="">Баббиты</a></li>
+														<li><a href="">Припой</a></li>
+														<li><a href="">Олово</a></li>
+													</ul>
+												</li>
+												<li class="parent">
+													<a href="">Бронза <span class="toggle-arr"></span></a>
+													<ul class="submenu l-4">
+														<li><a href="">Бронзовый прокат</a></li>
+														<li><a href="">Бронзовая труба</a></li>
+														<li><a href="">Бронзовая проволока</a></li>
+														<li><a href="">Бронзовый круг</a></li>
+														<li><a href="">Бронзовая лента</a></li>
+														<li><a href="">Бронзовый лист</a></li>
+														<li><a href="">Литье из бронзы</a></li>
+													</ul>
+												</li>
+												<li class="parent">
+													<a href="">Свинец <span class="toggle-arr"></span></a>
+													<ul class="submenu l-4">
+														<li><a href="">Свинцовый прокат</a></li>
+														<li><a href="">Свинцовый лист</a></li>
+														<li><a href="">Свинцовая чушка</a></li>
+													</ul>
+												</li>
+												<li class="parent">
+													<a href="">Медь <span class="toggle-arr"></span></a>
+													<ul class="submenu l-4">
+														<li><a href="">Медный прокат</a></li>
+														<li><a href="">Медная труба</a></li>
+														<li><a href="">Медная проволока</a></li>
+														<li><a href="">медный круг</a></li>
+														<li><a href="">Шина медная</a></li>
+														<li><a href="">Медный лист</a></li>
+														<li><a href="">Медные фитинги</a></li>
+														<li><a href="">Нейзильбер, мельхиор, манганин, куниаль</a></li>
+														<li><a href="">Медный припой</a></li>
+													</ul>
+												</li>
+												<li class="parent">
+													<a href="">Алюминий <span class="toggle-arr"></span></a>
+													<ul class="submenu l-4">
+														<li><a href="">Алюминиевый прокат</a></li>
+														<li><a href="">Алюминиевая труба</a></li>
+														<li><a href="">Проволока из алюминия</a></li>
+														<li><a href="">Алюминииевый круг</a></li>
+														<li><a href="">Алюминиевая лента</a></li>
+														<li><a href="">Алюминиевый лист</a></li>
+														<li><a href="">Алюминиевый уголок</a></li>
+														<li><a href="">Алюминиевый швеллер</a></li>
+													</ul>
+												</li>
+												<li class="parent">
+													<a href="">Дюраль <span class="toggle-arr"></span></a>
+													<ul class="submenu l-4">
+														<li><a href="">Дюралевая проволока</a></li>
+														<li><a href="">Дюралевый круг</a></li>
+														<li><a href="">Дюралевая лента</a></li>
+														<li><a href="">Дюралевый лист</a></li>
+														<li><a href="">Дюралевый уголок</a></li>
+														<li><a href="">Квадрат дюралевый</a></li>
+														<li><a href="">Дюралюминиевый шестигранник</a></li>
+														<li><a href="">Дюралевая труба</a></li>
+													</ul>
+												</li>
+												<li class="parent">
+													<a href="">Латунь <span class="toggle-arr"></span></a>
+													<ul class="submenu l-4">
+														<li><a href="">Латунный прокат</a></li>
+														<li><a href="">Латунная труба</a></li>
+														<li><a href="">Латунная проволока</a></li>
+														<li><a href="">Латунный круг</a></li>
+														<li><a href="">Латунная лента</a></li>
+														<li><a href="">Латунный лист</a></li>
+														<li><a href="">Латунный шестигранник</a></li>
+														<li><a href="">Хромированная латунь</a></li>
+														<li><a href="">Фольга из латуни</a></li>
+														<li><a href="">Полоса из латуни</a></li>
+														<li><a href="">Никелированная латунь</a></li>
+														<li><a href="">Квадрат из латуни</a></li>
+													</ul>
+												</li>
+												<li class="parent">
+													<a href="">Ферросплавы <span class="toggle-arr"></span></a>
+													<ul class="submenu l-4">
+														<li><a href="">Ферробор</a></li>
+														<li><a href="">Феррованадий</a></li>
+														<li><a href="">Ферровольфрам</a></li>
+														<li><a href="">Ферромарганец</a></li>
+														<li><a href="">Ферромолибден</a></li>
+														<li><a href="">Ферроникель</a></li>
+														<li><a href="">Феррониобий</a></li>
+														<li><a href="">Ферросиликомарганец</a></li>
+														<li><a href="">Ферросиликоцирконий</a></li>
+														<li><a href="">Ферросилиций</a></li>
+														<li><a href="">Ферротитан</a></li>
+														<li><a href="">Феррохром</a></li>
+														<li><a href="">Феррофосфор</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li class="parent" id="category-5">
+											<a class="submenu-link toggle-link">Легированная сталь <span class="toggle-arr"></span></a>
+											<ul class="submenu l-3">
+												<li class="parent">
+													<a href="">Стальная труба <span class="toggle-arr"></span></a>
+													<ul class="submenu l-4">
+														<li><a href="">Труба холодного проката</a></li>
+														<li><a href="">Горячекатаная труба</a></li>
+														<li><a href="">Водогазопроводная труба</a></li>
+														<li><a href="">Оцинкованная труба</a></li>
+														<li><a href="">Электросварная труба</a></li>
+														<li><a href="">Прямоугольная труба</a></li>
+														<li><a href="">Цена на быстрорезы и стали</a></li>
+													</ul>
+												</li>
+												<li class="parent">
+													<a href="">Инструментальные стали <span class="toggle-arr"></span></a>
+													<ul class="submenu l-4">
+														<li><a href="">Быстрорежущая инструментальная сталь</a></li>
+														<li><a href="">Штамповая инструментальная сталь</a></li>
+														<li><a href="">Легированная инструментальная сталь</a></li>
+													</ul>
+												</li>
+												<li class="parent">
+													<a href="">Трубопроводная арматура <span class="toggle-arr"></span></a>
+													<ul class="submenu l-4">
+														<li><a href="">Нержавеющие фланцы</a></li>
+														<li><a href="">Нержавеющие отводы</a></li>
+														<li><a href="">Нержавеющие переходы</a></li>
+														<li><a href="">Нержавеющие тройники</a></li>
+														<li><a href="">Нержавеющие заглушки</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li class="parent" id="category-6">
+											<a class="submenu-link toggle-link">Сетки и соединения <span class="toggle-arr"></span></a>
+											<ul class="submenu l-3">
+												<li class="parent">
+													<a href="">Металлорукава <span class="toggle-arr"></span></a>
+													<ul class="submenu l-4">
+														<li><a href="">Металлорукава под приварку</a></li>
+														<li><a href="">Металлорукава конус с углом 74°</a></li>
+														<li><a href="">Металлорукава. Фланцевое соединение</a></li>
+														<li><a href="">Металлорукава. Фланцевое соединение с откидными болтами</a></li>
+														<li><a href="">Ниппель с наружной резьбой</a></li>
+														<li><a href="">Таблица химической стойкости</a></li>
+													</ul>
+												</li>
+												<li class="parent">
+													<a href="">Компенсаторы <span class="toggle-arr"></span></a>
+													<ul class="submenu l-4">
+														<li><a href="">Линзовый</a></li>
+														<li><a href="">Осевой под приварку</a></li>
+														<li><a href="">Резиновый</a></li>
+														<li><a href="">Сальниковый</a></li>
+														<li><a href="">Сильфонный</a></li>
+														<li><a href="">Тканевый</a></li>
+														<li><a href="">Фланцевый</a></li>
+														<li><a href="">Компенсатор для теплосетей</a></li>
+													</ul>
+												</li>
+												<li class="parent">
+													<a href="">Сетки тканые <span class="toggle-arr"></span></a>
+													<ul class="submenu l-4">
+														<li><a href="">Сетка тканая нержавеющая</a></li>
+														<li><a href="">Сетка тканная оцинкованная</a></li>
+														<li><a href="">Сетка тканная латунная</a></li>
+														<li><a href="">Сетка тканная нихромовая</a></li>
+														<li><a href="">Сетка тканная фильтровая галунного плетения</a></li>
+														<li><a href="">Проволочная одинарная</a></li>
+														<li><a href="">Низкоуглеродистая</a></li>
+														<li><a href="">Проволочная штукатурная</a></li>
+														<li><a href="">Конвейерная</a></li>
+														<li><a href="">Канилированная проволочная (рифленая)</a></li>
+													</ul>
+												</li>
+												<li class="parent">
+													<a href="">Общая характеристика <span class="toggle-arr"></span></a>
+													<ul class="submenu l-4">
+														<li><a href="">Фильтроэлементы общая характеристика</a></li>
+														<li><a href="">Общая характеристика фильтроэлементов</a></li>
+													</ul>
+												</li>
+												<li class="parent">
+													<a href="">Сетки плетеные <span class="toggle-arr"></span></a>
+													<ul class="submenu l-4">
+														<li><a href="">Рукавная</a></li>
+														<li><a href="">Транспортёрная</a></li>
+														<li><a href="">Проволочная (рабица)</a></li>
+														<li><a href="">Проволочная шестиугольная (Манье)</a></li>
+													</ul>
+												</li>
+												<li class="parent">
+													<a href="">Сетки строительные <span class="toggle-arr"></span></a>
+													<ul class="submenu l-4">
+														<li><a href="">Сетки строительные арматурные</a></li>
+														<li><a href="">Дорожная строительная сетка</a></li>
+														<li><a href="">Кладочная строительная сетка</a></li>
+														<li><a href="">Штукатурная строительная сетка</a></li>
+														<li><a href="">Фасадная строительная сетка</a></li>
+													</ul>
+												</li>
+												<li class="parent">
+													<a href="">Специальные сетки <span class="toggle-arr"></span></a>
+													<ul class="submenu l-4">
+														<li><a href="">Низкоуглеродистая сетка для фильтрации полимеров и пластмасс</a></li>
+														<li><a href="">Низкоуглеродистая сетка с эпоксидным покрытием для фильтров</a></li>
+														<li><a href="">Специальная сетка, применяемая для обезвоживания угольных шламов</a></li>
+														<li><a href="">Сетка проволочная сварная</a></li>
+													</ul>
+												</li>
+												<li class="parent">
+													<a href="">Сетки полимерные <span class="toggle-arr"></span></a>
+													<ul class="submenu l-4">
+														<li><a href="">Штукатурная стеклотканевая</a></li>
+														<li><a href="">Защитная фасадная</a></li>
+													</ul>
+												</li>
+												<li class="parent">
+													<a href="">Барьеры безопасности <span class="toggle-arr"></span></a>
+													<ul class="submenu l-4">
+														<li><a href="">Проволока колючая двойного кручения</a></li>
+														<li><a href="">Егоза</a></li>
+														<li><a href="">Проволока</a></li>
+													</ul>
+												</li>
+												<li class="parent">
+													<a href="">Канаты и тросы <span class="toggle-arr"></span></a>
+													<ul class="submenu l-4">
+														<li><a href="">Нержавеющие канаты</a></li>
+														<li><a href="">Специальные канаты</a></li>
+														<li><a href="">Канаты стальные нержавеющие</a></li>
+														<li><a href="">Канаты авиационные</a></li>
+														<li><a href="">Канаты атомные станции</a></li>
+														<li><a href="">канаты ТЭС</a></li>
+														<li><a href="">канаты нержавеющие 2172-80</a></li>
+														<li><a href="">ТУ 14-4-278-73</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li><a class="link" href="/price">прайс</a></li>
+							<li><a class="link" href="/about">компания</a></li>
+							<li><a class="link" href="/grade-list">марочник</a></li>
+							<li><a class="link" href="/contacts">контакты</a></li>
+						</ul>
+					</nav>
+					<a href="#header-search-form" class="media-search icon-search mobile-menu-item js-media-menu-item"></a>
+					<form id="header-search-form" class="header-search-form mobile-toggle" action="#">
+						<input class="header-search-field" type="text" name="search" placeholder="Поиск по сайту">
+						<button  type="submit" name="submit">
+							<span class="submit-btn icon-search"></span>
+							<span class="btn-main"><span class="inner">Поиск</span></span>
+						</button>
+					</form>
+				</div>
 			</div>
 		</header>
-
+		<div class="general-logo">
+			<div class="inner">
+				<div class="container page-unit">
+					<div class="logo">
+						<img class="logo-img" alt="avglob.org" src="img/avglob.svg" onerror="this.src = 'img/logo.png'">
+					</div>
+					<div class="slogan">
+						Качественный металл. Надежное партнерство
+					</div>
+				</div>
+			</div>
+		</div>
 		<article>
-			<section class="page-unit main-block">
-				Качественный металл. Надежное партнерство
+			<div class="page-unit main-block">
+				<h1 class="main-title"><span class="inner">Каталог продукции</span></h1>
+				<ul class="home-catalog">
+					<li class="item toggle-unit">
+						<div class="inner">
+							<div class="title toggle-link">
+								Никелевые сплавы
+								<span class="arrow-down icon icon-circle-down"></span>
+								<span class="arrow-up icon icon-circle-up"></span>
+							</div>
+							<div class="thumb toggle-el">
+								<img src="img/home/nickel-alloys.png" alt="">
+								<div class="list-wrapper">
+									<ul class="list">
+										<li class="item"><a href="">Нихром и фехраль</a></li>
+										<li class="item"><a href="">Спецстали</a></li>
+										<li class="item"><a href="">Термопарная проволока</a></li>
+										<li><a class="js-catalog-link btn-border" href="#category-1">Все категории</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="item toggle-unit">
+						<div class="inner">
+							<div class="title toggle-link">
+								Нержавейка, титан
+								<span class="arrow-down icon icon-circle-down"></span>
+								<span class="arrow-up icon icon-circle-up"></span>
+							</div>
+							<div class="thumb toggle-el">
+								<img src="img/home/stainless-titanium.png" alt="">
+								<div class="list-wrapper">
+									<ul class="list">
+										<li class="item"><a href="">Нержавеющий прокат</a></li>
+										<li class="item"><a href="">Титан, Титановый прокат</a></li>
+										<li class="item"><a href="">Порошки цветных металлов</a></li>
+										<li><a class="js-catalog-link btn-border" href="#category-2">Все категории</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="item toggle-unit">
+						<div class="inner">
+							<div class="title toggle-link">
+								Редкие и тугоплавкие металлы
+								<span class="arrow-down icon icon-circle-down"></span>
+								<span class="arrow-up icon icon-circle-up"></span>
+							</div>
+							<div class="thumb toggle-el">
+								<img src="img/home/refractory.png" alt="">
+								<div class="list-wrapper">
+									<ul class="list">
+										<li class="item"><a href="">Вольфрам</a></li>
+										<li class="item"><a href="">Молибден</a></li>
+										<li class="item"><a href="">Металлы в прокате</a></li>
+										<li class="item"><a href="">Редкие металлы</a></li>
+										<li class="item"><a href="">Лантоиды</a></li>
+										<li><a class="js-catalog-link btn-border" href="#category-3">Все категории</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="item toggle-unit">
+						<div class="inner">
+							<div class="title toggle-link">
+								Цветные металлы
+								<span class="arrow-down icon icon-circle-down"></span>
+								<span class="arrow-up icon icon-circle-up"></span>
+							</div>
+							<div class="thumb toggle-el">
+								<img src="img/home/color-metal.png" alt="">
+								<div class="list-wrapper">
+									<ul class="list">
+										<li class="item"><a href="">Баббит, припой, олово</a></li>
+										<li class="item"><a href="">Бронза</a></li>
+										<li class="item"><a href="">Медь</a></li>
+										<li class="item"><a href="">Латунь</a></li>
+										<li class="item"><a href="">Алюминий</a></li>
+										<li class="item"><a href="">Дюраль</a></li>
+										<li class="item"><a href="">Свинец</a></li>
+										<li class="item"><a href="">Ферросплавы</a></li>
+										<li><a class="js-catalog-link btn-border" href="#category-4">Все категории</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="item toggle-unit">
+						<div class="inner">
+							<div class="title toggle-link">
+								Легированная сталь
+								<span class="arrow-down icon icon-circle-down"></span>
+								<span class="arrow-up icon icon-circle-up"></span>
+							</div>
+							<div class="thumb toggle-el">
+								<img src="img/home/legir-steel.png" alt="">
+								<div class="list-wrapper">
+									<ul class="list">
+										<li class="item"><a href="">Стальная труба</a></li>
+										<li class="item"><a href="">Инструментальные стали</a></li>
+										<li class="item"><a href="">Трубопроводная арматура</a></li>
+										<li><a class="js-catalog-link btn-border" href="#category-5">Все категории</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="item toggle-unit">
+						<div class="inner">
+							<div class="title toggle-link">
+								Сетки и соединения
+								<span class="arrow-down icon icon-circle-down"></span>
+								<span class="arrow-up icon icon-circle-up"></span>
+							</div>
+							<div class="thumb toggle-el">
+								<img src="img/home/grid-and-soedin.png" alt="">
+								<div class="list-wrapper">
+									<ul class="list">
+										<li class="item"><a href="">Металлорукава</a></li>
+										<li class="item"><a href="">Компенсаторы</a></li>
+										<li class="item"><a href="">Сетки тканые</a></li>
+										<li class="item"><a href="">Общая характеристика</a></li>
+										<li class="item"><a href="">Сетки плетеные</a></li>
+										<li class="item"><a href="">Сетки строительные</a></li>
+										<li class="item"><a href="">Специальные сетки</a></li>
+										<li class="item"><a href="">Сетки полимерные</a></li>
+										<li class="item"><a href="">Барьеры безопасности</a></li>
+										<li class="item"><a href="">Канаты и тросы</a></li>
+										<li><a class="js-catalog-link btn-border" href="#category-6">Все категории</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
 
-				<div class="central_column">
-       <h1 class="catalog-index g_font"><span>Каталог</span> продукции</h1>
-      
+			<div class="advantage">
+				<div class="inner">
+					<div class="page-unit">
+						<h1 class="main-title"><span class="inner">Наши преимущества</span></h1>
+						<ul>
+							<li>
+								<div class="emblem-unit">
+									<span class="font-icon icon-medal"></span>
+								</div>
+								<div>ГАРАНТИЯ<br> ВЫСОКОГО КАЧЕСТВА</div>
+							</li>
+							<li>
+								<div class="emblem-unit">
+									<span class="font-icon icon-user"></span>
+								</div>
+								<div>ИНДИВИДУАЛЬНЫЙ<br> ПОДХОД К ЗАКАЗУ</div>
+							</li>
+							<li>
+								<div class="emblem-unit">
+									<span class="font-icon icon-products"></span>
+								</div>
+								<div>БОЛЬШОЙ ВЫБОР<br> НЕРЖАВЕЙКИ И ЦВЕТМЕТА</div>
+							</li>
+							<li>
+								<div class="emblem-unit">
+									<span class="font-icon icon-settings"></span>
+								</div>
+								<div>КОМФОРТНЫЙ<br> СЕРВИС ПОЛНОГО ЦИКЛА</div>
+							</li>
+							<li>
+								<div class="emblem-unit">
+									<span class="font-icon icon-cards"></span>
+								</div>
+								<div>УДОБНАЯ ФОРМА<br> ОПЛАТЫ</div>
+							</li>
+							<li>
+								<div class="emblem-unit">
+									<span class="font-icon icon-stopwatch"></span>
+								</div>
+								<div>МИНИМАЛЬНЫЕ СРОКИ<br> ОТГРУЗКИ И ДОСТАВКИ</div>
+							</li>
+							<li>
+								<div class="emblem-unit">
+									<span class="font-icon icon-discount"></span>
+								</div>
+								<div>ГИБКАЯ СИСТЕМА<br> СКИДОК</div>
+							</li>
+							<li>
+								<div class="emblem-unit">
+									<span class="font-icon icon-map"></span>
+								</div>
+								<div>ПОСТАВКИ ПО ВСЕЙ<br> РОССИИ</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+	
+			<div class="main-news">
+				<div class="inner">
+					<div class="page-unit">
+						<h1 class="main-title"><span class="inner">Новости</span></h1>
+						<ul>
+							<li>
+								<div class="title"><a href="">КНР наращивает производство стальной КНР наращивает производство стальной...</a></div>
+								<div class="date">19 Ноября , 2014</div>
+								<div class="body">По данным, предоставленным ассоциацией CISA По данным, предоставленным ассоциацией CISA, за прошедшие три квартала этого года КНР выпустила 618 млн.</div>
+							</li>
+							<li>
+								<div class="title"><a href="">Объемы экспорта железной руды растут...</a></div>
+								<div class="date">18 Ноября , 2014</div>
+								<div class="body">В октябре текущего года экспортируемые объемы железной руды, поставляемые из Порта Хедланд — Западная Австрали...</div>
+							</li>
+							<li>
+								<div class="title"><a href="">Финансовые показатели «ArcelorMittal...</a></div>
+								<div class="date">17 Ноября , 2014</div>
+								<div class="body">Мировой металлургический лидер «ArcelorMittal” в открытом доступе сообщил о получении им в процессе деятельнос...</div>
+							</li>
+							<li>
+								<div class="title"><a href="">ВСМПО-Ависма не разочаровывает заруб...</a></div>
+								<div class="date">01 Октября , 2014</div>
+								<div class="body">В сентябре представители французской двигателестроительной корпорации «Snecma» нанесли визит в корпорацию ВСМП...</div>
+							</li>
+							<!--
+							<li>
+								<div class="title"><a href="">Богучанский завод завершил установку...</a></div>
+								<div class="date">30 Сентября , 2014</div>
+								<div class="body">Специалисты Богучанского алюминиевого завода, входящего в состав корпорации «РУСАЛ», провели завершающую техно...</div>
+							</li>
+							<li>
+								<div class="title"><a href="">«РУСАЛ» разрабатывает новые сплавы</a></div>
+								<div class="date">29 Сентября , 2014</div>
+								<div class="body">В сентябре текущего года корпорация «РУСАЛ» начала разрабатывать технологию по изготовлению нано-</div>
+							</li>
+							-->
+						</ul>
+						<div class="text-center">
+							<a class="btn-main" href=""><span class="inner">Все новости</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
 
-<div class="obertka_item" style="position: relative; width: 25%; float: left; display: inline-block; min-height:375px; margin-left: 4%; margin-right: 4%;"><div class="product_item" style="position: absolute; float: left; width: 100%; margin-top: 15px; margin-left: 0; margin-right: 0;"><a href="nikelevie-splavi.html"><img src="img/home/nickel-alloys.png" alt="" style="height: 185px;"></a><div class="title g_font"><a href="nikelevie-splavi.html">Никелевые сплавы</a></div><div class="product_list"><ul><li><a href="nichrome.html">Нихром и фехраль</a></li><li><a href="steel.html">Спецстали</a></li><li><a href="termoparnaya-provoloka.html">Термопарная проволока</a></li></ul></div></div></div><div class="obertka_item" style="position: relative; width: 25%; float: left; display: inline-block; min-height: 375px; margin-left: 4%; margin-right: 4%;"><div class="product_item" style="position: absolute; float: left; width: 100%; margin-top: 15px; margin-left: 0px; margin-right: 0px; padding: 0px; background: none; z-index: 0; border: none; box-shadow: 0px 0px 0px 0px;"><a href="nerjavejka-titan.html"><img src="img/home/stainless-titanium.png" alt="" style="height: 185px;"></a><div class="title g_font"><a href="nerjavejka-titan.html">Нержавейка, титан</a></div><div class="product_list"><ul><li><a href="nerzhaveushiy-prokat.html">Нержавеющий прокат</a></li><li><a href="titanium.html">Титан, Титановый прокат</a></li><li><a href="poroshki.html">Порошки</a></li></ul></div></div></div><div class="obertka_item" style="position: relative; width: 25%; float: left; display: inline-block; min-height: 375px; margin-left: 4%; margin-right: 4%;"><div class="product_item" style="position: absolute; float: left; width: 100%; margin-top: 15px; margin-left: 0px; margin-right: 0px; padding: 0px; background: none; z-index: 0; border: none; box-shadow: 0px 0px 0px 0px;"><a href="metali-i-izdeliya.html"><img src="img/home/refractory.png" alt="" style="height: 185px;"></a><div class="title g_font"><a href="metali-i-izdeliya.html">Редкие и тугоплавкие</a></div><div class="product_list"><ul><li><a href="tungsten-menu.html">Вольфрам</a></li><li><a href="molybdenum-menu.html">Молибден</a></li><li><a href="metals-in-rolling.html">Металлы в прокате</a></li><li class="hide" style="display: none;"><a href="special-metals.html">Редкие металлы</a></li><li class="hide" style="display: none;"><a href="lanthoide.html">Лантоиды</a></li></ul></div></div></div><div class="obertka_item" style="position: relative; width: 25%; float: left; display: inline-block; min-height:375px; margin-left: 4%; margin-right: 4%;"><div class="product_item" style="position: absolute; float: left; width: 100%; margin-top: 15px; margin-left: 0; margin-right: 0;"><a href="svetnie-metali.html"><img src="img/home/color-metal.png" alt="" style="height: 185px;"></a><div class="title g_font"><a href="svetnie-metali.html">Цветные металлы</a></div><div class="product_list"><ul><li><a href="babbit-pripoi-olovo.html">Баббит, припой, олово</a></li><li><a href="bronze-menu.html">Бронза</a></li><li><a href="med-metal.html">Медь</a></li><li class="hide"><a href="med-latun-bronze.html">Латунь</a></li><li class="hide"><a href="aluminiy.html">Алюминий</a></li><li class="hide"><a href="dyural.html">Дюраль</a></li><li class="hide"><a href="svinecz-f.html">Свинец</a></li><li class="hide"><a href="ferrosplavyi.html">Ферросплавы</a></li></ul></div></div></div><div class="obertka_item" style="position: relative; width: 25%; float: left; display: inline-block; min-height: 375px; margin-left: 4%; margin-right: 4%;"><div class="product_item" style="position: absolute; float: left; width: 100%; margin-top: 15px; margin-left: 0px; margin-right: 0px; padding: 0px; background: none; z-index: 0; border: none; box-shadow: 0px 0px 0px 0px;"><a href="steel-tube.html"><img src="img/home/legir-steel.png" alt="" style="height: 185px;"></a><div class="title g_font"><a href="steel-tube.html">Легированная сталь</a></div><div class="product_list"><ul><li><a href="stalnaya-truba.html">Стальная труба</a></li><li><a href="instrumentalnie-stali.html">Инструментальные стали</a></li><li><a href="truboprovodnaya-armatura.html">Трубопроводная арматура</a></li></ul></div></div></div><div class="obertka_item" style="position: relative; width: 25%; float: left; display: inline-block; min-height: 375px; margin-left: 4%; margin-right: 4%;"><div class="product_item" style="position: absolute; float: left; width: 100%; margin-top: 15px; margin-left: 0px; margin-right: 0px; padding: 0px; background: none; z-index: 0; border: none; box-shadow: 0px 0px 0px 0px;"><a href="setki-i-soedineniya.html"><img src="img/home/grid-and-soedin.png" alt="" style="height: 185px;"></a><div class="title g_font"><a href="setki-i-soedineniya.html">Сетки и соединения</a></div><div class="product_list"><ul><li><a href="metallorukava.html">Металлорукaва</a></li><li><a href="kompensatoryi.html">Компенсаторы</a></li><li><a href="setki-tkannyie.html">Сетки тканные</a></li><li class="hide" style="display: none;"><a href="setki-filtroelementyi.html">Сетки фильтроэлементы</a></li><li class="hide" style="display: none;"><a href="setki-pletenyie.html">Сетки плетеные</a></li><li class="hide" style="display: none;"><a href="setki-stroitelnyie.html">Сетки строительные</a></li><li class="hide" style="display: none;"><a href="setki-speczialnyie.html">Сетки специальные</a></li><li class="hide" style="display: none;"><a href="setki-polimernyie.html">Сетки полимерные</a></li><li class="hide" style="display: none;"><a href="bareryi-bezopasnosti.html">Барьеры безопасности</a></li><li class="hide" style="display: none;"><a href="kontakty-i-trosy.html">Канаты и тросы</a></li></ul></div></div></div><div class="obertka_item" style="position: relative; width: 25%; float: left; display: inline-block; min-height:375px; margin-left: 4%; margin-right: 4%;"><div class="product_item" style="position: absolute; float: left; width: 100%; margin-top: 15px; margin-left: 0; margin-right: 0;"><a href="kabelnaya-produktsiya.html"><img src="/web/20141219021051im_/http://www.auremo.org/files/0506.jpg" alt="" style="height: 185px;"></a><div class="title g_font"><a href="kabelnaya-produktsiya.html">Кабельная продукция</a></div><div class="product_list"><ul><li><a href="kabeli-silovye.html">Кабели силовые</a></li><li><a href="kabeli-kontrolnye.html">Кабели контрольные</a></li><li><a href="kabeli-s-izolyaciey-iz-sshitogo-polietilena.html">Кабели с изоляцией из сшитого полиэтилена</a></li><li class="hide"><a href="provoda-ustanovochnye.html">Провода установочные</a></li><li class="hide"><a href="provoda-neizolirovannie.html">Провода неизолированные</a></li><li class="hide"><a href="provoda-dlya-vozdushnyh-liniy-elektriperedach.html">Провода для воздушных линий электропередач</a></li><li class="hide"><a href="sluda.html">Слюда</a></li></ul></div></div></div>
-     
-       
+			<div class="main-about toggle-unit">
+				<div class="inner">
+					<div class="page-unit">
+						<h1 class="main-title"><span class="inner">ПРОДАЖА НЕРЖАВЕЙКИ И ЦВЕТНИНЫ</span></h1>
+						<div class="toggle-height">
+							<div class="item">
+								<h2 class="block-title">Наш подход</h2>
 
+								<p>Компания "МетПромСтар" поставляет цветной и нержавеющий металлопрокат от металлургических заводов России и зарубежья. Благодаря прямому сотрудничеству с производителями у нас продается нержавейка и цветные металлы по выгодной цене. Также мы проводим распродажи нержавейки, предоставляем разнообразные скидки на предлагаемую продукцию и оказываемые услуги. Каждого покупателя ожидает индивидуальный подход, быстрое и качественное обслуживание.</p>
 
+								<p>Основным направлением нашей деятельности служит оптовая продажа металлопроката из нержавейки и цветных металлов. Мы стали постоянными партнерами для многих предприятий, потребляющих цветной и нержавеющий прокат в Москве и других регионах. В то же время мы активно развиваем розничную торговлю, выполняя относительно небольшие заказы физических и юридических лиц.</p>
 
-        <div class="clear"></div>
-       
-       <!--Каталог PDF-->
-       <div class="catalog-pdf">
-        <div class="catalog-pdf-line">
-        </div>
-        <div class="catalog-pdf-left">
-        </div>
-        <div class="catalog-pdf-img">
-        <!--<div class="catalog-pdf-img" onClick="document.location='/web/20141219021051/http://www.auremo.org/files/catalog/Auremo.pdf' target='_blank'">-->
-        </div>
-        <div class="catalogpdftext">
-         <a href="/web/20141219021051/http://www.auremo.org/files/catalog/Auremo.pdf" target="_blank">Cкачать каталог</a>
-        </div>
-       </div>
+								<h2 class="block-title">Ассортимент нержавеющей стали</h2>
 
-       <!--Факты-->
-       <div class="facts">
-          <div class="quote g_font"><div id="mposter">- Металлы в наших сплавах на 55% покрывают таблицу Менделеева</div></div>
-          <div class="clear"></div>
-            <div class="reload_link g_font">
-              <img src="/web/20141219021051im_/http://www.auremo.org/themes/modern/images/random.png" class="rotate" alt=""><a href="#" id="yt0">Ещё факт о компании</a>            </div>
-       </div>
-       
-       <!--Информационный блок, география поставок-->
-       <div class="info_block">
-          <div class="block_left">
-             <h1 class="g_font"><span>Auremo</span> - Качество и надежность.</h1>
-             <div class="scroll-pane jspScrollable" tabindex="0" style="overflow: hidden; padding: 0px; width: 535px;">
+								<p>Нержавеющая сталь от компании "МетПромСтар" – это максимальный выбор товаров высокого качества. В нашем ассортименте представлены нержавеющие трубы, листовой и сортовой прокат, специальные стали, декоративная и пищевая нержавейка. Вниманию покупателей предлагается множество типоразмеров каждого изделия. По степени обработки поверхности в нашем каталоге выделяется матовая и зеркальная нержавейка, а по своим свойствам – жаропрочная нержавеющая сталь. Назначение и цена материала зависят от его характеристик. Значительным спросом у строителей пользуются листы с различными видами рифления. На нашем складе хранится рифленый нержавеющий металлопрокат любого типа. Также следует отметить спецсталь в виде инструментального и конструкционного металла.</p>
 
+								<p>Мы предлагаем богатый ассортимент нержавеющей стали как по отечественному ГОСТ, так и зарубежные аналоги AISI. Выбрать нужные марки нержавейки можно в одноименном разделе нашего сайта.</p>
+							</div>
+							<div class="item">
+								<h2 class="block-title">Цветмет в ассортименте</h2>
 
+								<p>Важное место в наших поставках занимает цветной металлопрокат ведущих мировых производителей. Предлагаемый сортамент – это трубы из цветного металла, плоский и специальный прокат. Наша цветнина включает алюминий, медь, титан и свинец, а также их сплавы различной чистоты. Типоразмеры изделий, марки сплавов и цены на цветмет указаны в соответствующих прайс-листах.</p>
 
-<div class="jspContainer" style="width: 535px; height: 280px;"><div class="jspPane" style="padding: 0px; width: 520px; top: 0px;"><p>
-	ООО «Ауремо» – молодая динамично развивающаяся компания, которая, несмотря на свою молодость, прочно завоевала Украинский рынок. Нашими клиентами являются промышленные предприятия со всей Украины и мира: на счету компании более 50-ти успешных экспортных сделок. Мы поставляем продукцию во все уголки Земли: от России до Австралии.</p><p>
-	Компания Ауремо предлагает широкий ассортимент цветного и нержавеющего металлопроката, специальных сталей, титана. Хороший выбор марок и сплавов, размеров и форм не оставит равнодушным даже самого привередливого покупателя. Также компания осуществляет производство и поставку продукции по чертежам заказчика.</p><p>
-	В своей работе мы руководствуемся принципом индивидуального подхода к каждому клиенту. Мы можем удовлетворить даже самый невероятный запрос, легко решаем сложные задачи. Наш девиз: «Простое в сложном!»</p><p>
-	Нашу продукцию вы можете приобрести со склада в Киеве и под заказ. Мы работаем только с проверенными временем и довольными клиентами поставщиками.</p></div><div class="jspVerticalBar"><div class="jspCap jspCapTop"></div><div class="jspTrack" style="height: 280px;"><div class="jspDrag" style="height: 85px;"><div class="jspDragTop"></div><div class="jspDragBottom"></div></div></div><div class="jspCap jspCapBottom"></div></div></div></div>
-          </div>
-          <div class="block_right">
-             <h1 class="g_font"><span>География</span> поставок продукции</h1>
-             <div class="geography"></div>
-          </div>
-          <div class="clear"></div>                 
-       </div>
-    
+								<h2 class="block-title">Склад цветного и нержавеющего проката</h2>
 
+								<p>Наша компания располагает собственным складом в Москве, где всегда в наличии нержавейка отечественного и импортного производства. Благодаря четкой работе всего персонала нержавеющая сталь отгружается без создания очереди среди покупателей. Наши сотрудники помогут купить нержавейку и цветной прокат с максимальным комфортом и по доступной цене. Характеристики склада соответствуют европейским стандартам, он оснащен на высоком техническом уровне и имеет удобный подъезд для автотранспорта.</p>
 
+								<h2 class="block-title">Сервис в области нержавейки и цветных металлов</h2>
 
-     <!--Новости, Twitter лента-->
-       <div class="scroll_blocks">
-          <div class="block_left">
-             <h1 class="f_left g_font"><span>Новости</span> металлургии</h1>
-             <div class="read_more"><a href="/web/20141219021051/http://www.auremo.org/news.html">читать все новости</a></div>
-             <div class="clear"></div>
-             <!--Сюда вставить блок с вертикальной прокруткой-->
-                           
-                 <div class="scroll-pane1 jspScrollable" tabindex="0" style="overflow: hidden; padding: 0px; width: 534px;"> 
-                  
-                  
-                 <div class="jspContainer" style="width: 534px; height: 400px;"><div class="jspPane" style="padding: 0px; width: 517px; top: 0px;"><div class="news_main"><div class="one_news_main"><div class="main_dmY" style="width: 18%;"><img src="/web/20141219021051im_/http://www.auremo.org/files/2(5).jpg" alt="News" style="width: 80px;"></div><div class="main_title_news" style="width: 77%; margin-left: 5%;"><div class="main_news_date g_font">17 Декабрь 2014</div><div class="title_link_news"><a href="/web/20141219021051/http://www.auremo.org/news/2014/12/kolskaya-gmk-zamenit-oborudovanie.html">Кольская ГМК заменит оборудование</a></div><p>Кольская горно-металлургическая компания начала претворение в жизнь проекта по техническому переоснащению дробильного отделения производства....</p></div></div><div class="one_news_main"><div class="main_dmY" style="width: 18%;"><img src="/web/20141219021051im_/http://www.auremo.org/files/3(6).jpg" alt="News" style="width: 80px;"></div><div class="main_title_news" style="width: 77%; margin-left: 5%;"><div class="main_news_date g_font">16 Декабрь 2014</div><div class="title_link_news"><a href="/web/20141219021051/http://www.auremo.org/news/2014/12/sredneuralskiy-medeplavilnyy-zavod-sovershenstvyet-oborudovanie.html">Среднеуральский медеплавильный завод совершенствует оборудование </a></div><p>На СУМЗе, входящем в состав металлургического комплекса УГМК, завершен процесс по вводу в эксплуатацию динамического высоковольтного компенсатора искажений напряжения....</p></div></div><div class="one_news_main"><div class="main_dmY" style="width: 18%;"><img src="/web/20141219021051im_/http://www.auremo.org/files/1(3).jpg" alt="News" style="width: 80px;"></div><div class="main_title_news" style="width: 77%; margin-left: 5%;"><div class="main_news_date g_font">15 Декабрь 2014</div><div class="title_link_news"><a href="/web/20141219021051/http://www.auremo.org/news/2014/12/sredneuralskiy-medeplavilnyy-zavod-otmechaet-20-let-opytno-promyshlennogo-kompleksa.html">Среднеуральский медеплавильный завод отмечает 20 лет опытно-промышленного комплекса</a></div><p>Среднеуральский медеплавильный завод отметил очередную годовщину. Со дня запуска опытно-промышленного комплекса по плавке меди в жидкой ванне прошло 20 лет....</p></div></div><div class="one_news_main"><div class="main_dmY" style="width: 18%;"><img src="/web/20141219021051im_/http://www.auremo.org/files/3(5).jpg" alt="News" style="width: 80px;"></div><div class="main_title_news" style="width: 77%; margin-left: 5%;"><div class="main_news_date g_font">10 Декабрь 2014</div><div class="title_link_news"><a href="/web/20141219021051/http://www.auremo.org/news/2014/12/pravitelstvo-kazahstan-ishchet-rynki-sbyta.html">Правительство Казахстана ищет новые рынки сбыта</a></div><p>По сведениям, предоставленным исполнительным директором Республиканской ассоциации горно-металлургических и горнодобывающих предприятий, Николаем Радостовцем, учитывая снижение спроса на производимую горно-металлургическими предприятиями Казахстана...</p></div></div><div class="one_news_main"><div class="main_dmY" style="width: 18%;"><img src="/web/20141219021051im_/http://www.auremo.org/files/2(4).jpg" alt="News" style="width: 80px;"></div><div class="main_title_news" style="width: 77%; margin-left: 5%;"><div class="main_news_date g_font">09 Декабрь 2014</div><div class="title_link_news"><a href="/web/20141219021051/http://www.auremo.org/news/2014/12/kirovskoy-zavod-ustanavlivaet-novoe-oborudovanie.html">Кировский завод устанавливает новое оборудование</a></div><p>Кировский завод по обработке цветных металлов, входящий в состав УГМК-оЦМ, продолжает усовершенствование действующего оборудования....</p></div></div></div></div><div class="jspVerticalBar"><div class="jspCap jspCapTop"></div><div class="jspTrack" style="height: 400px;"><div class="jspDrag" style="height: 85px;"><div class="jspDragTop"></div><div class="jspDragBottom"></div></div></div><div class="jspCap jspCapBottom"></div></div></div></div> 
-                 <div class="grad"></div>
-             
-             <!---->
-          </div>
+								<p>Сервис компании "МетПромСтар" включает в себя услуги по металлообработке и доставке реализуемой продукции. Мы обрабатываем цветной и нержавеющий металл (резка в размер, гибка и шлифовка) на современном импортном оборудовании. На нашем складе изготавливаются качественные изделия, ограждение и заготовки из нержавейки по эскизам заказчика. Собственный автопарк машин различной грузоподъемности позволяет производить доставку любых объемов металлопроката в установленный срок. Региональные терминалы транспортных компаний обеспечивают отгрузки оплаченного товара в различных городах России.</p>
+							</div>
+						</div>
+						<div class="text-center toggle-action">
+							<a class="btn-main toggle-link" href=""><span class="inner">Узнать больше</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
 
-          <div class="clear"></div>
-       </div>    
-    </div>
-			</section>
+			<div class="clients-home">
+				<div class="page-unit">
+					<h1 class="main-title"><span class="inner">Наши клиенты</span></h1>
+					<div class="clients-list">
+						<div>
+							<a href="http://www.itrz.com.ua/" target="_blank" title="ОАО “ИЗЮМСКИЙ ТЕПЛОВОЗОРЕМОНТНЫЙ ЗАВОД”" style="background-image:url(img/clients/itrz.jpg);"></a>
+						</div>
+						<div>
+							<a href="http://www.phiolent.com/" target="_blank" title="«Завод «Фиолент»" style="background-image:url(img/clients/phiolent.png);"></a>
+						</div>
+						<div>
+							<a href="http://zvgraphit.com.ua/" target="_blank" title="ЗАВАЛЬЕВСКИЙ ГРАФИТ" style="background-image:url(img/clients/zvgraphit.jpg);"></a>
+						</div>
+						<div>
+							<a href="http://novatec.ua/" target="_blank" title="ООО “Гидропром”" style="background-image:url(img/clients/novatec.png);"></a>
+						</div>
+						<div>
+							<a href="http://www.azot.com.ua/ru/" target="_blank" title="ДНЕПРАЗОТ" style="background-image:url(img/clients/azot.png);"></a>
+						</div>
+						<div>
+							<a href="http://zavod-ekvator.com/" target="_blank" title="ЗАВОД &quot;ЭКВАТОР&quot;" style="background-image:url(img/clients/zavod-ekvator.png);"></a>
+						</div>
+						<div>
+							<a href="http://www.artyomsalt.com/" target="_blank" title="ГП &quot;Артемсоль&quot;" style="background-image:url(img/clients/artyomsalt.jpeg);"></a>
+						</div>
+						<div>
+							<a href="http://www.askoplast.com.ua/ru/" target="_blank" title="ООО «АСКОпласт»" style="background-image:url(img/clients/askoplast.png);"></a>
+						</div>
+						<div>
+							<a href="http://vostok-agro.info/" target="_blank" title="Восток Агро" style="background-image:url(img/clients/vostok-agro.png);"></a>
+						</div>
+						<div>
+							<a href="http://www.elpa.com.ua/" target="_blank" title="ПАО &quot;Глуховский завод &quot;Электропанель&quot;" style="background-image:url(img/clients/nicmas.png);"></a>
+						</div>
+					</div>
+					<nav>
+						<span class="icon prev-btn icon-arrow-left"></span>
+						<div class="dots-container"></div>
+						<span class="icon next-btn icon-arrow-right"></span>
+					</nav>
+				</div>
+			</div>
+
+			<div class="subscription">
+				<div class="page-unit">
+					<h1 class="main-title">
+						<span class="icon icon-subscription icon-subscription_48"></span>
+						<span class="inner">Подписка на прайсы и спецпредложения</span>
+						<span class="arrow-down icon icon-circle-down"></span>
+						<span class="arrow-up icon icon-circle-up"></span>
+					</h1>
+					<form class="subscription-form">
+						<div class="message-box message-info">Информационное сообщение</div>
+						<div class="message-box message-error">Сообщение об ошибке</div>
+						<div class="message-box message-warning">Предупреждающее сообщение</div>
+						<div class="message-box message-success">Сообщение об успехе</div>
+
+						<input class="text-field" type="text" placeholder="Ваше имя" name="name">
+						<input class="text-field" type="text" placeholder="E-mail" name="mail">
+						<select class="simple-select">
+							<option value="1">Европа</option>
+							<option value="2" selected="">Украина</option>
+							<option value="3">Россия, СНГ</option>
+						</select>
+						<button class="btn-main" type="submit"><span class="inner">подписаться</span></button>
+						<div class="desc">Вы всегда можете отключить уведомления нажав <a href="" class="internal-link">здесь</a></div>
+					</form>
+				</div>
+			</div>
 		</article>
 
-		<!--
-						<div class="left-menu home-menu">
-							<a class="menu-item" href="">Никелевые сплавы</a>
-							<a class="menu-item" href="">Нержавейка, титан</a>
-							<a class="menu-item" href="">Редкие и тугоплавкие металлы</a>
-						</div>
-						-->
-
-						<!--
-						<div class="right-menu home-menu">
-							<a class="menu-item" href="">Цветные металлы</a>
-							<a class="menu-item" href="">Легированная сталь</a>
-							<a class="menu-item" href="">Сетки и соединения</a>
+		<footer id="footer" class="clearfix">
+			<div class="info-wrapper">
+				<div class="inner">
+					<div class="info">
 						<div>
-						-->
+							<a class="site-logo" href="">
+								<img class="logo-img" alt="avglob.org" src="img/avglob.svg" onerror="this.src = 'img/logo_7.png'">
+							</a>
+							<div class="copyright">© Avek Global. 2011-2017</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="actions-wrapper">
+				<div class="actions">
+					<nav>
+						<ul>
+							<li><a class="link active" href="javascript:;">каталог</a></li>
+							<li><a class="link" href="/price">прайс</a></li>
+							<li><a class="link" href="/about">компания</a></li>
+							<li><a class="link" href="/grade-list">марочник</a></li>
+							<li><a class="link" href="/contacts">контакты</a></li>
+						</ul>
+					</nav>
+					<div class="contacts">
+						<div class="item">
+							<div class="label"><span class="text">Телефон</span></div>
+							<div class="phone"><small>+7 (926)</small> 168-06-19</div>
+							<div class="phone"><small>+7 (495)</small> 777-25-41</div>
+						</div>
+						<div class="item">
+							<div class="label"><span class="text">E-mail</span></div>
+							<a href="mailto:avglob@avglob.org">avglob@avglob.org</a>
+						</div>
+						<div class="item">
+							<div class="label"><span class="text">Адрес</span></div>
+							Москва, 119034, ул. Тимура Фрунзе 11, к. 2
+						</div>
+					</div>
+					<ul class="social-likes">
+						<li class="fb-item">
+							<div id="fb-like"></div>
+							<div class="fb-like" data-href="https://www.avglob.org/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+						</li>
+						<li class="twitter-item">
+							<a href="https://twitter.com/share" class="twitter-share-button hide" data-related="jasoncosta" data-lang="en" data-count="vertical">Tweet</a>
+						</li>
+						<li class="g-plus-item">
+							<div class="g-plusone" data-size="medium"></div>
+						</li>
+						<li class="vk-item">
+							<div id="vk_like"></div>
+						</li>
+					</ul>
+					<div class="socials">
+						<a class="font-icon icon-facebook" href=""></a>
+						<a class="font-icon icon-twitter" href=""></a>
+						<a class="font-icon icon-linkedin" href=""></a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<div class="width-checker"></div>
 	</body>
 </html>

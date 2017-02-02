@@ -1,0 +1,206 @@
+/* --- FOOTER --- */
+@import "colors.styl"
+
+#footer
+	background-color $color_4
+	text-align center
+	position relative
+
+	a:hover
+		color $color_1
+
+	.info-wrapper
+		background url(../img/bg/plant.jpg) top center no-repeat
+		background-size cover
+		width 35%
+		position absolute
+		top 0
+		left 0
+		height 100%
+
+		.inner
+			//background rgba(5, 20, 35, 0.7)
+			height 100%
+
+		.info
+			float right
+			padding 40px 20px
+			color $color_1
+			width 100%
+			max-width 455px
+			display flex
+			flex-direction column
+			justify-content center
+			align-items center
+			height 100%
+
+		.site-logo
+			max-width 140px
+			img
+				width 100%
+				
+
+		.copyright
+			padding-top 40px
+
+
+	.actions-wrapper
+		padding-left 35%
+		position relative
+		
+		.actions
+			float left
+			width 100%
+			max-width 845px
+			padding 35px 20px
+			color $color_1
+
+		nav
+			text-transform uppercase
+			text-align center
+			font-size 12px
+
+			li
+				display inline-block
+				padding 10px 20px
+
+	.contacts
+		padding-top 40px
+		display flex
+		align-items stretch
+
+		.item
+			position relative
+			display inline-block
+			display inline-flex
+			flex-wrap wrap
+			justify-content center
+			align-items center
+			margin-left 1%
+			vertical-align top
+			width 31%
+			min-height 90px
+			border 1px solid $color_2
+			padding 15px 10px 10px
+
+			&:first-child
+				margin-left 0
+
+		.label
+			position absolute
+			width 100%
+			white-space nowrap
+			top -10px
+			left 0
+
+		.text
+			padding 2px 20px
+			background-color $color_4
+			color $color_9
+			font-size 12px
+
+		.phone
+			font-size 18px
+
+	.socials
+		padding-top 15px
+		font-size 17px
+
+		.font-icon
+			color $color_8
+			display inline-block
+			width 40px
+			height 40px
+			border 1px solid $color_2
+			border-radius 50%
+			text-align center
+			line-height 34px
+			margin 0 10px
+			transition all .5s ease
+
+			&:hover
+				color $color_1
+				border-color $color_1
+
+	.social-likes
+		text-align center
+		padding-top 20px
+
+		li
+			display inline-block
+			vertical-align top
+			padding 5px 10px
+
+			&.vk-item
+				margin-left 0
+
+@media screen and (max-width: 1024px)
+	#footer
+		.contacts
+			.item
+				font-size 13px
+
+			.phone
+				font-size 15px
+
+@media screen and (max-width: 968px)
+	#footer
+		.info-wrapper
+			background none
+			height auto
+			width 100%
+			bottom 0
+			top auto
+
+			.info
+				padding 10px 0
+				width 100%
+				max-width 100%
+
+			.copyright
+				padding-top 0
+				font-size 13px
+				color $color_9
+
+			.inner
+				background none
+				height auto
+
+		.actions-wrapper
+			padding-left 0
+
+			.actions
+				padding-left 20px
+				padding-right 20px
+				padding-bottom 50px
+				max-width 1300px
+				float none
+
+		.site-logo
+			display none
+
+@media screen and (max-width: 640px)
+	#footer
+		.contacts
+			display block
+			width 100%
+			max-width 250px
+			margin 0 auto
+
+			.item
+				display block
+				min-height auto
+				margin-top 20px
+				width 100%
+
+				&:first-child
+					margin-top 0
+
+		.actions-wrapper
+			.actions
+				nav
+					li
+						padding-left 10px
+						padding-right 10px
+
+

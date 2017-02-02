@@ -1,21 +1,562 @@
 @import "colors.styl"
 
 .general-logo
+	background url(../img/bg/header_1920_black.jpg) 50% -300px no-repeat fixed
+	background-size cover
 	text-align center
-	display flex
-	min-height 400px
-	align-content center
-	align-items center
-	justify-content center
 	//font-family 'Roboto Condensed', sans-serif
-	font-size 19px
+	
+	.inner
+		//background $opacity_7
 
-	.container
-		padding-top 40px
-		width 100%
+		.container
+			height 500px
+			align-content center
+			align-items center
+			justify-content center
+			display flex
+			flex-direction column
+			transition width .5s ease
+
+		.logo
+			width 300px
+			padding-top 30px
+			margin 0 auto
+			transition width .5s ease
+
+		.logo-img
+			width 100%
 		
 
 .slogan
-	color $color_6
-	text-shadow 1px 1px 20px $color_10
-	padding 20px
+	text-align center
+	position relative
+	font-size 16px
+	color $color_5
+	padding 30px
+	text-transform uppercase
+
+/* --- CATALOG --- */
+.home-catalog
+	position relative
+	display flex
+	flex-wrap wrap
+	align-items stretch
+	align-content stretch
+	justify-content space-between
+	z-index 2
+
+	.inner
+		position relative
+		z-index 1
+		border 1px solid $color_11
+		transition width .5s ease
+		overflow hidden
+
+		&:hover
+			overflow inherit
+
+	.list-wrapper
+		opacity 0
+		position absolute
+		padding 20px 10px
+		min-height 100%
+		width 100%
+		background-color rgba(0,0,0,.8)
+		left 0
+		top 0
+		z-index 2
+
+		&:hover
+			opacity 1
+			transition opacity .5s ease
+
+	.list
+		display inline-block
+		text-align left
+
+		.item
+			font-size 16px
+			padding-top 5px
+
+			a
+				color $color_1
+
+				&:hover
+					color $color_5
+
+	&>.item
+		display inline-block
+		width 31.5%
+		margin-bottom 20px
+		vertical-align top
+
+	.title
+		font-size 15px
+		background-color $color_6
+		font-family 'Roboto Condensed', sans-serif
+		text-transform uppercase
+		text-align center
+		padding 10px
+		position relative
+		z-index 3
+		white-space nowrap
+		text-overflow ellipsis
+
+		.icon
+			display none
+
+		&:after
+			z-index 1
+			position absolute
+			content ''
+			border-style solid
+			border-width 10px 12px
+			border-color $color_11 transparent transparent transparent
+			left 50%
+			top 100%
+			margin-left -12px
+
+		&:before
+			z-index 2
+			position absolute
+			content ''
+			border-style solid
+			border-width 8px 10px
+			border-color $color_6 transparent transparent transparent
+			left 50%
+			top 100%
+			margin-left -10px
+
+	.thumb
+		border-top 1px solid $color_11
+		background-color $color_1
+		padding 30px 10px 0
+		text-align center
+		position relative
+
+	img
+		max-width 100%
+		position relative
+		z-index 1
+
+	.btn-border	
+		margin 25px auto
+
+/* ADVANTAGE */
+.advantage
+	margin-top 20px
+	background url(../img/bg/plant_1920.jpg) center no-repeat fixed
+	background-size cover
+
+	//&>.inner
+		//background rgba(8, 31, 55, .9)
+
+	.main-title
+		color $color_1
+
+	ul
+		display flex
+		justify-content space-between
+		flex-wrap wrap
+		padding-bottom 30px
+
+	li
+		min-width 21%
+		max-width 21%
+		width 21%
+		display inline-block
+		margin 20px 0
+		vertical-align top
+		text-align center
+		color $color_1
+
+	.emblem-unit
+		width 100px
+		height 100px
+		position relative
+		line-height 130px
+		margin 0 auto 20px
+		background-color $color_8
+		border-radius 50px
+
+		.font-icon
+			position relative
+			font-size 64px
+			z-index 2
+
+/* --- NEWS --- */
+.main-news
+	margin-top 20px
+
+	.page-unit
+		padding-bottom 40px
+
+	li
+		width 48%
+		display inline-block
+		margin-right 3%
+		margin-bottom 40px
+		vertical-align top
+
+		&:nth-child(even)
+			margin-right 0
+
+	.title
+		font-size 17px
+		margin-bottom 10px
+
+	.date
+		padding 2px 10px
+		font-size 12px
+		color $color_1
+		background-color $color_9
+		display inline-block
+
+	.body
+		padding-top 5px
+		font-size 16px
+
+/* --- ABOUT --- */
+.main-about
+	margin-top 20px
+
+	&>.inner
+		background-color $color_6
+		border-top 1px solid $color_11
+		border-bottom 1px solid $color_11
+		padding-bottom 40px
+
+	&.opened
+		.toggle-height
+			max-height 3000px
+
+		.toggle-action
+			display none
+
+	.toggle-height
+		max-height 300px
+		overflow hidden
+		transition all 1s ease
+
+	.toggle-action
+		padding-top 40px
+		position relative
+
+		&:before
+			content ''
+			position absolute
+			height 40px
+			width 100%
+			bottom 100%
+			left 0
+			background-image linear-gradient(to bottom, rgba(250,250,250,0) 0%,rgba(250,250,250,1) 100%)
+
+	.item
+		display inline-block
+		vertical-align top
+		width 48%
+		margin-right 3%
+
+		&:last-child
+			margin-right 0
+
+
+
+/* --- CLIENTS --- */
+.clients-home
+	.page-unit
+		padding-bottom 40px
+
+	.clients-list
+
+		.slick-slide
+			padding 0 15px
+			
+		a
+			width 100%
+			display inline-block
+			padding-bottom 60%
+			background-position center
+			background-repeat no-repeat
+			background-size contain
+
+	nav
+		padding 20px 0
+		text-align center
+
+		.icon
+			font-size 24px
+			cursor pointer
+			vertical-align middle
+
+	.slick-slide
+		text-align center
+
+/* --- SUBSCRIPTION --- */
+.subscription
+	background $color_11 url(../img/bg/letter-border.png) top left repeat-x
+	padding-top 10px
+	position relative
+	text-align center
+
+	.main-title
+		.icon
+			display none
+
+	.subscription-form
+		padding-bottom 50px
+
+	&:after
+		content ''
+		height 7px
+		position absolute
+		bottom 0
+		left 0
+		width 100%
+		background $color_11 url(../img/bg/letter-border.png) top left repeat-x
+		opacity .2
+
+	.desc
+		padding-top 20px
+
+	.text-field
+		width 20%
+		margin-right 15px
+
+	.simple-select
+		width 20%
+
+	.select2
+		margin-right 20px
+
+
+/* --- SLIDER ---  */
+.dots-container
+	display inline-block
+	margin 0 15px
+	vertical-align middle
+
+	li
+		display inline-block
+		margin 0 5px
+
+		button
+			width 17px
+			height 17px
+			border-radius 9px
+			display block
+			background-color $color_8
+			overflow hidden
+			text-indent -1000em
+			cursor pointer
+			transition all .5s ease
+
+			&:hover
+				background-color $color_4
+
+		&.slick-active
+			button
+				background-color $color_4
+.slick-arrow
+	color $color_8
+	transition all .5s ease
+
+	&:hover:not(.slick-disabled)
+		color $color_4
+
+.slick-disabled
+	color $color_9
+
+@media screen and (max-width: 968px)
+	.general-logo
+		background-image url(../img/bg/header_980_black.jpg)
+		background-position 50% 50%
+		background-attachment scroll
+		margin-top 48px
+		
+		.inner
+			.logo
+				width 200px
+
+			.container
+				height 350px
+
+	/* --- CATALOG --- */
+	.home-catalog
+		&>.item
+			width 48%
+
+	/* ADVANTAGE */
+	.advantage
+		background-image url(../img/bg/plant_980.jpg)
+		background-position 50% 50%
+		background-attachment scroll
+
+	/* --- NEWS --- */
+	.main-news
+		.body
+			font-size 14px
+
+		.title
+			font-size 15px
+
+
+	/* --- CLIENTS --- */
+	.clients-home
+		nav
+			padding 10px 0
+
+		.page-unit
+			padding-bottom 20px
+
+	/* --- SUBSCRIPTION --- */
+	.subscription
+		background-position 0 -3px
+
+		&:after
+			height 4px
+
+		.subscription-form
+			display none
+
+		.main-title
+			text-align left
+			padding 20px 40px 30px 55px
+
+			.icon-subscription
+				position absolute
+				display block
+				left 0
+				top 50%
+				margin-top -29px
+				color $color_5
+				font-size 40px
+
+			.arrow-down
+				display block
+
+			&.opened
+				.arrow-down
+					display none
+
+				.arrow-up
+					display block
+
+			.arrow-down, .arrow-up
+				position absolute
+				top 50%
+				right 0
+				margin-top -18px
+				font-size 26px
+				color $color_4
+
+		.text-field
+			width 100%
+			display block
+			max-width 400px
+			margin 15px auto 0
+
+			&:first-child
+				margin-top 0
+
+		.simple-select
+			width 100%
+			max-width 400px
+
+		.select2
+			margin 15px auto 20px
+			display block
+
+@media screen and (max-width: 640px)
+	.general-logo
+		background-image url(../img/bg/header_640_black.jpg)
+		background-position 50% 50%
+		background-attachment scroll
+
+	/* --- CATALOG --- */
+
+	.home-catalog
+		&>.item
+			width 100%
+
+			.thumb
+				display none
+				padding 0
+
+			.list-wrapper
+				position relative
+				opacity 1
+
+			img
+				display none
+
+		.title
+			text-align left
+			padding-right 40px
+			white-space normal
+
+			&:before, &:after
+				display none
+
+			.arrow-down
+				display block
+
+		.arrow-down, .arrow-up
+			position absolute
+			top 50%
+			right 10px
+			margin-top -12px
+			font-size 22px
+			color $color_4
+
+		.opened
+			.arrow-down
+				display none
+
+			.arrow-up
+				display block
+
+
+	/* ADVANTAGE */
+	.advantage
+		ul
+			font-size 12px
+
+		li
+			min-width 48%
+			max-width 48%
+			width 48%
+			margin-bottom 0
+
+		.emblem-unit
+			width 80px
+			height 80px
+			line-height 100px
+
+			.font-icon
+				font-size 45px
+
+
+	/* --- NEWS --- */
+	.main-news
+		.page-unit
+			padding-bottom 20px
+
+		li
+			width 100%
+			margin-bottom 20px
+			margin-right 0
+
+			&:nth-child(even)
+				margin-right 0
+
+	/* --- ABOUT --- */
+	.main-about
+		.item
+			width 100%
+			margin-right 0
+
+		.toggle-action
+			padding-top 20px
+

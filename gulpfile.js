@@ -8,6 +8,8 @@ var
 	stylus 		 = require('gulp-stylus'),
 	concat 		 = require('gulp-concat'),
 	autoprefixer = require('gulp-autoprefixer'),
+	gutil 		 = require('gulp-util'),
+	sort         = require('gulp-sort'),
 
 	// paths
 	projectPath = './',
@@ -36,15 +38,16 @@ gulp.task('cleanCompiled', function () {
 
 // watch .styl files change task (stylusWatch)
 gulp.task('sw', function () {
-	gulp.watch(path.join(projectPath, '**/*.styl'), ['sc']);
+	gulp.watch(path.join(projectPath, '**', '*.styl'), ['sc']);
 });
 
 // compile stylus files task (stylusCompile)
 gulp.task('sc', function() {
 	var 
 		tasks = designPaths.map(function(_path) {
+
 			var
-				src = path.join(projectPath, _path, 'stylus', '**/*.styl'),
+				src = path.join(projectPath, _path, 'stylus', '**', '*.styl'),
 				dest = path.join(projectPath, _path);
 
 			return gulp.src(src)
@@ -53,10 +56,23 @@ gulp.task('sc', function() {
 					use: [ks()],
 					linenos: false
 				}))
+				.pipe(sort({
+					comparator: function(file1, file2) {
+						if (file1.path.indexOf('icomoon') == -1) {
+							return 1;
+						}
+						if (file2.path.indexOf('icomoon') == -1) {
+							return -1;
+						}
+						return 0;
+					}
+				}))
 				.pipe(concat('style.css'))
-				.pipe(autoprefixer('last 2 versions'))
+				.pipe(autoprefixer('last 4 versions'))
 				.pipe(gulp.dest(dest))
 		});
+
+
 
 	return merge(tasks);
 });
